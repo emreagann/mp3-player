@@ -17,4 +17,5 @@ const musicList = [
  new Music("Hips Don't Lie","Shakira","3.jpg","3.mp3"),
  new Music("APT","Rose","4.jpeg","4.mp3"),
  new Music("Bir Ateşe Attın Beni","Kamuran Akkor","5.jpg","5.mp3"),
+ new Music("Sev Yeter","Kamuran Akkor","5.jpg","6.mp3"),
 ];
