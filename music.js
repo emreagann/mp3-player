@@ -19,4 +19,6 @@ const musicList = [
  new Music("Bir Ateşe Attın Beni","Kamuran Akkor","5.jpg","5.mp3"),
  new Music("Sev Yeter","Kamuran Akkor","5.jpg","6.mp3"),
 new Music("Espresso","Sabrina Carpenter","6.jpg","7.mp3"),
+new Music("Set Fire To The Rain","Adele","7.jpg","8.mp3"),
+
 ];
