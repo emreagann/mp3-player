@@ -20,5 +20,5 @@ const musicList = [
  new Music("Sev Yeter","Kamuran Akkor","5.jpg","6.mp3"),
 new Music("Espresso","Sabrina Carpenter","6.jpg","7.mp3"),
 new Music("Set Fire To The Rain","Adele","7.jpg","8.mp3"),
-
+new Music("Impossible","James Arthur","8.jpg","9.mp3"),
 ];
