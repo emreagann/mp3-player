@@ -141,7 +141,7 @@ const displayMusicList = (musicList) => {
             liAudioDuration.innerText = calculateTime(liAudio.duration);
         });
     });
-    addDragEvents(); // yeni liste oluşunca olayları yeniden ekle
+    addDragEvents();
 };
 
 let draggedItem = null;
@@ -187,8 +187,8 @@ function handleDrop(e) {
 
     draggedItem.classList.remove('dragging');
     updateMusicListFromDOM(player);
-    updateLiIndexes(); // ✅ sıralama güncelleme
-    addDragEvents();   // ✅ yeni sıralamaya göre tekrar event ekle
+    updateLiIndexes(); 
+    addDragEvents();  
 }
 
 function handleDragEnd(e) {
