@@ -11,7 +11,6 @@ const progressBar = document.querySelector("#progress-bar");
 const volume = document.querySelector("#volume");
 const volumeBar = document.querySelector("#volume-bar");
 const ul = document.querySelector("ul");
-const audio = document.querySelector("audio");
 const player = new MusicPlayer(musicList);
 window.addEventListener("load", () => {
    let music = player.getMusic();
