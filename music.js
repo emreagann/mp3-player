@@ -5,8 +5,8 @@ class Music {
     this.img = img;
   this.file = file;
   }
-getName(){
-  return this.title + "-"+this.artist;
+getName() {
+  return `${this.title} - ${this.artist}`;
 }
 const musicList = [
  new Music("Renklensin","Reynmen","1.jpg","1.mp3"),
