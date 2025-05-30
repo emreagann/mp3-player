@@ -9,6 +9,10 @@ getName() {
     return this.title + " - " + this.artist;
 
 }
+getMusicName() {
+    return this.title;
+  }
+}
 const musicList = [
  new Music("Renklensin","Reynmen","1.jpg","1.mp3"),
  new Music("Ayayay","Bratia Stereo","2.jpg","2.mp3"),
