@@ -6,7 +6,8 @@ class Music {
   this.file = file;
   }
 getName() {
-  return `${this.title} - ${this.artist}`;
+    return this.title + " - " + this.artist;
+
 }
 const musicList = [
  new Music("Renklensin","Reynmen","1.jpg","1.mp3"),
