@@ -5,10 +5,6 @@ class Music {
     this.img = img;
   this.file = file;
   }
-
-getMusicName() {
-    return this.title;
-}
 getName(){
   return this.title + "-"+this.artist;
 }
