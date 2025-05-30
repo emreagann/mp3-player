@@ -20,7 +20,7 @@ window.addEventListener("load", () => {
 });
 function displayMusic(music) {
    image.src = "img/" + music.img;
-   title.innerText = music.getName();
+   title.innerText = music.getMusicName();
    artist.innerText = music.artist;
    audio.src = "mp3/" + music.file;
 }
