@@ -13,7 +13,11 @@
 <body>
     <div class="container">
         <div class="card shadow-lg rounded">
-            <div id="player"></div>
+            <div class="p-3 border-bottom">
+                <input type="text" id="search-input" class="form-control" placeholder="Search song...">
+            </div>
+            <div id="player" style="position: absolute; width: 1px; height: 1px; opacity: 0; pointer-events: none;">
+            </div>
             <div id="music-details" class="text-center border-bottom my-3">
                 <p class="title">Select a song</p>
                 <p class="artist">Artist</p>
@@ -58,10 +62,7 @@
             </div>
 
             <div id="music-list" class="collapse show">
-                <div class="p-2">
-                    <input type="text" id="search-input" class="form-control form-control-sm"
-                        placeholder="Search on YouTube">
-                </div>
+
                 <ul class="list-group list-group-flush" style="max-height: 200px; overflow-y: auto;">
                 </ul>
             </div>
