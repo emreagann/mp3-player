@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,48 +9,69 @@
     <link rel="stylesheet" href="style.css">
     <title>Elysium Music</title>
 </head>
+
 <body>
     <div class="container">
         <div class="card shadow-lg rounded">
-        <img id="music-image" class="card-img-top" >
-        <audio id="audio"></audio>
-        <div id="music-details"class="text-center border-bottom my-3">  
-            <p class="title"></p>
-            <p class="artist"></p>
-        </div>
-        <div class="card-body">
-        <div id="progress">
-            <input type="range" id="progress-bar" class="form-range">
-            <div class="times">
-                <span id="current-time">0:00</span>
-                <span id="duration">0:00</span>
+            <div id="player"></div>
+            <div id="music-details" class="text-center border-bottom my-3">
+                <p class="title">Select a song</p>
+                <p class="artist">Artist</p>
+            </div>
+
+            <div class="card-body">
+                <div id="progress">
+                    <input type="range" id="progress-bar" value="0" class="form-range">
+                    <div class="times">
+                        <span id="current-time">0:00</span>
+                        <span id="duration">0:00</span>
+                    </div>
+                </div>
+
+                <div id="controls" class="text-center d-flex justify-content-center align-items-center">
+                    <button id="shuffle" class="btn btn-primary rounded-circle btn-sm mx-1" title="Shuffle">
+                        <i class="fa-solid fa-shuffle"></i>
+                    </button>
+                    <button id="prev" class="btn btn-primary rounded-circle mx-2">
+                        <i class="fa-solid fa-backward-step"></i>
+                    </button>
+                    <button id="play" class="btn btn-primary rounded-circle btn-lg mx-2">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <button id="next" class="btn btn-primary rounded-circle mx-2">
+                        <i class="fa-solid fa-forward-step"></i>
+                    </button>
+                    <button id="repeat" class="btn btn-primary rounded-circle btn-sm mx-1" title="Reset">
+                        <i class="fa-solid fa-arrow-rotate-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="card-footer">
+                <button class="btn btn-primary btn-sm" data-bs-toggle="collapse" data-bs-target="#music-list">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="volume-container">
+                    <i id="volume" class="fa-solid fa-volume-high"></i>
+                    <input type="range" id="volume-bar" value="100" max="100" class="form-range volume-bar">
+                </div>
+            </div>
+
+            <div id="music-list" class="collapse show">
+                <div class="p-2">
+                    <input type="text" id="search-input" class="form-control form-control-sm"
+                        placeholder="Search on YouTube">
+                </div>
+                <ul class="list-group list-group-flush" style="max-height: 200px; overflow-y: auto;">
+                </ul>
             </div>
         </div>
-        <div id="controls" class="text-center">
-            <button id="prev"class="btn btn-primary rounded-circle">  <i  class="fa-solid fa-backward-step"></i></button>
-            <button id="play" class="btn btn-primary rounded-circle btn-lg mx-2">  <i class="fa-solid fa-play "></i></button>
-            <button id="next" class="btn btn-primary rounded-circle">  <i  class="fa-solid fa-forward-step"></i></button>
-           
-        </div>
-        </div>
-        <div class="card-footer">
-            <button class="btn btn-primary btn-sm" data-bs-toggle="collapse" data-bs-target="#music-list">
-                <i class="fa-solid fa-bars"></i> 
-            </button>
-            <div class="volume-container">
-                <i id="volume" class="fa-solid fa-volume-high"></i>
-                <input type="range" id="volume-bar" value="100" max="100" class="form-range volume-bar">
-                </div>
-        </div>
-        <div id="music-list" class="collapse">
-            <ul class="list-group list-group-flush">
-            </ul>
-        </div>
     </div>
-    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="music.js"></script>
-    <script src="musicplayer.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="config.js"></script>
     <script src="app.js"></script>
 </body>
+
 </html>
