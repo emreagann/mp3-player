@@ -28,8 +28,8 @@ let updateTimer;
 window.onYouTubeIframeAPIReady = function () {
     console.log("YouTube API Ready callback fired.");
     player = new YT.Player('player', {
-        height: '250',
-        width: '100%',
+        height: '1',
+        width: '1',
         videoId: '',
         playerVars: {
             'playsinline': 1,
@@ -63,7 +63,7 @@ function onPlayerError(event) {
         case 100: errorMsg = "Video Not Found or Private/Deleted."; break;
     }
     console.error("YouTube Error:", event.data);
-    alert("Error: " + errorMsg + " Skipping to next...");
+    console.warn("Error: " + errorMsg + " Skipping to next...");
     nextMusic(true);
 }
 
