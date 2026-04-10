@@ -1,10 +1,8 @@
-/* YouTube Music Style Dark Theme */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 body {
     background-color: #030303;
-    /* YouTube Music Black */
-    color: #ffffff;
+-    color: #ffffff;
     font-family: 'Roboto', sans-serif;
     display: flex;
     align-items: center;
@@ -15,8 +13,7 @@ body {
 
 .container {
     background-color: #181818;
-    /* Darker Card Background */
-    border-radius: 12px;
+-    border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
     padding: 0;
     overflow: hidden;
@@ -33,7 +30,6 @@ body {
     padding: 20px;
 }
 
-/* Header & Search */
 .card-title {
     font-weight: 700;
     text-align: center;
@@ -57,8 +53,7 @@ body {
     outline: none;
 }
 
-/* Music Details */
-#music-details {
+-#music-details {
     text-align: center;
     margin: 20px 0;
 }
@@ -74,8 +69,7 @@ body {
     color: #aaaaaa;
 }
 
-/* Progress Bar */
-#progress {
+-#progress {
     margin-bottom: 20px;
 }
 
@@ -108,8 +102,7 @@ body {
     margin-top: 5px;
 }
 
-/* Controls */
-#controls {
+-#controls {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,8 +147,7 @@ body {
     color: #ff0000 !important;
 }
 
-/* Volume */
-.volume-container {
+-.volume-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -187,8 +179,7 @@ body {
     cursor: pointer;
 }
 
-/* Music List */
-ul.list-group {
+-ul.list-group {
     max-height: 200px;
     /* Reduced height for better fit */
     overflow-y: auto;
@@ -198,8 +189,7 @@ ul.list-group {
     margin: 0;
 }
 
-/* Custom Scrollbar */
-ul.list-group::-webkit-scrollbar {
+-ul.list-group::-webkit-scrollbar {
     width: 6px;
 }
 
